@@ -7,7 +7,7 @@ import Result from './pages/Result'
 
 const App = () => {
 
-  const [user, setuser] = useState()
+  const [user, setuser] = useState("")
   const [score, setscore] = useState(0)
 
   return (

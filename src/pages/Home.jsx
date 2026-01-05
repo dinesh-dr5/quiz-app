@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 const Home = ({ user, setuser }) => {
 
 
+  
+
   const navigator = useNavigate()
 
   const handchange = () => {
@@ -20,7 +22,7 @@ const Home = ({ user, setuser }) => {
         </section>
        
         <br />
-        <button disabled={user==0} onClick={handchange} className='rounded-md p-2 bg-blue-800 hover:bg-blue-500' >submit</button>
+        <button disabled={user.length === 0 } onClick={handchange} className='rounded-md p-2 bg-blue-800 hover:bg-blue-500' >submit</button>
       
 
     </div>

@@ -95,12 +95,16 @@ const Quiz = ({ user, setscore }) => {
       <h2>{questionInd + 1} . {questions[questionInd].question}</h2>
       {
         questions[questionInd].options.map(function (option, ind) {
-          return <button className='p-3 pb-10 hover:text-blue-400' key={ind} onClick={() => handanswer(option)}>{option}</button>
+          return <button className='p-3 hover:text-blue-400' key={ind} onClick={() => handanswer(option)}>{option}</button>
         })
       }
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
-      <Link to='/' className='rounded-md p-1 ml-6  bg-blue-800 hover:bg-blue-500' >  Back to Home</Link>
+      <Link to='/' onClick={()=>setuser(0)}  className='rounded-md p-1 ml-6  bg-blue-800 hover:bg-blue-500' >  Back to Home</Link>
     </div>
   )
 }
