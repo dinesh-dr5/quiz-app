@@ -18,7 +18,7 @@ const Home = ({ user, setuser }) => {
     
          <section>
           <label htmlFor="name">Name :</label>
-          <input required placeholder='Enter your name' onChange={(e) => setuser(e.target.value)} className=' focus:outline-none focus:bg-black bg-black border-b-2 m-1' type="text" name='name' />
+          <input required placeholder='Enter your name' onChange={(e) => setuser(e.target.value)} className=' bg-transparent focus:outline-none focus:bg-black bg-black border-b-2 m-1' type="text" name='name' />
         </section>
        
         <br />
